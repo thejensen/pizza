@@ -3,17 +3,25 @@
 function Pizza(toppings, size) {
   this.toppings = [];
   this.size = [];
+  console.log(this.size);
 }
 
-var basePrice = 10
+var basePrice = 8;
 
 Pizza.prototype.price = function () {
-  for (var i = 0; i < pizza.toppingsArray.length; i++) {
-    basePrice += 1
+  for (var i = 0; i < this.toppings.length; i++) {
+    basePrice += 1;
   }
-  for (var i = 0; i < pizza.size.length; i++) {
-    pizza.size[i]
+  for (var i = 0; i < this.size.length; i++) {
+    if (this.size[i] === "12") {
+      basePrice += 2;
+    } else if (this.size[i] === "14") {
+      basePrice += 4;
+    } else if (this.size[i] === "18") {
+      basePrice += 6;
+    }
   }
+  return basePrice;
 }
 
 // User Interface Logic
@@ -27,10 +35,9 @@ $(document).ready(function() {
     var inputtedToppings = $('.form-check-input:checked').map(function() {
       newPizza.toppings.push($(this).val());
     });
-    newPizza.size.push($('input:radio[name="size"]:checked').val());
-
-
-    console.log(newPizza);
-
+    var inputtedSize = ($('input:radio[name="size"]:checked').val());
+    newPizza.size.push(inputtedSize);
+    $('#price').text(newPizza.price());
+    // $('.form-check').empty();
   });
 });

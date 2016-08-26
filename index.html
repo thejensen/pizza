@@ -18,7 +18,7 @@
       <div class="row">
         <form>
           <div class="col-xs-4">
-            <h2>Ingredients</h2>
+            <h2>Ingredients (Add $1)</h2>
             <div class="form-check">
               <label>
                 <input type="checkbox" class="form-check-input" value="pepperoni">
@@ -78,7 +78,7 @@
             <h2>Size</h2>
             <div class="radio">
               <label>
-                <input type="radio" name="size" value="10">
+                <input type="radio" name="size" value="12">
                 12" (Serves 2-3) $10
               </label>
             </div>
@@ -97,8 +97,8 @@
           </div>
           <button type="submit" class="btn btn-success">Place Order</button>
         </form>
-        <div id="price">
-          <h3>Order Total: $</h3>
+        <div id="order-total">
+          <h3>Order Total: $<span id="price"></span></h3>
         </div>
       </div>
     </div>

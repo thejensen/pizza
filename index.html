@@ -1,71 +1,101 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
 
-    <title></title>
+    <title>Pizza Shop</title>
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Pizza Shop of Horrors</h1>
+      <h1>Rustic Pizza</h1>
     </div>
     <div class="container">
-      <div class="form-check">
-        <label for="Pepperoni">
-          <input type="checkbox" class="form-check-input" value="pepperoni">
-          Pepperoni
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Sausage">
-          <input type="checkbox" class="form-check-input" value="sausage">
-          Sausage
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Ground Beef">
-          <input type="checkbox" class="form-check-input" value="ground-beef">
-          Ground Beef
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Anchovies">
-          <input type="checkbox" class="form-check-input" value="anchovies">
-          Anchovies
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Mushrooms">
-          <input type="checkbox" class="form-check-input" value="mushrooms">
-          Mushrooms
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Onions">
-          <input type="checkbox" class="form-check-input" value="onions">
-          Onions
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Green Peppers">
-          <input type="checkbox" class="form-check-input" value="green-peppers">
-          Green Peppers
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Tomatoes">
-          <input type="checkbox" class="form-check-input" value="tomatoes">
-          Tomatoes
-        </label>
-      </div>
-      <div class="form-check">
-        <label for="Extra Cheese">
-          <input type="checkbox" class="form-check-input" value="extra-cheese">
-          Extra Cheese
-        </label>
+      <div class="row">
+        <form>
+          <div class="col-xs-4">
+            <h3>Ingredients</h3>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" value="pepperoni">
+                Pepperoni
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" value="sausage">
+                Sausage
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" value="ground-beef">
+                Ground Beef
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" value="anchovies">
+                Anchovies
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" name="topping" value="mushrooms">
+                Mushrooms
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" name="topping" value="onions">
+                Onions
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" name="topping" value="green-peppers">
+                Green Peppers
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" name="topping" value="tomatoes">
+                Tomatoes
+              </label>
+            </div>
+            <div class="form-check">
+              <label>
+                <input type="checkbox" class="form-check-input" name="topping" value="extra-cheese">
+                Extra Cheese
+              </label>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <h3>Size</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="10">
+                12" (Serves 2-3)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="14">
+                14" (Serves 3-4)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="18">
+                18" (Serves 4-6)
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">Place Order</button>
+        </form>
       </div>
     </div>
   </body>

@@ -1,3 +1,17 @@
 body {
   margin-top: 30px;
 }
+
+.jumbotron {
+  color: ivory;
+  font-family: 'Fontdiner Swanky', cursive;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  background-image: url(../img/pizza-cartoon.png);
+
+
+}
+
+body {
+}

@@ -1,20 +1,46 @@
 body {
-  margin-top: 30px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
-  background-color: ivory;
+  padding: 5%;
+  font-family: 'Arimo', sans-serif;
+  font-weight: lighter;
+  background-image: url(../img/painting.jpg);
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.jumbotron {
-  margin-left: 10%;
-  margin-right: 10%;
-  background-image: url(../img/pizza-cartoon.png);
+.sidebar {
+  background-image: url(../img/chalkboard.jpg);
+  background-position: center;
+  background-size: cover;
   color: ivory;
-  text-shadow: 2px 2px olive;
   text-align: center;
-  font-family: 'Fontdiner Swanky', cursive;
+  font-family: 'Stardos Stencil', cursive;
 }
 
-h1 {
-  background: rgba(175,32,28,0.85);
+.sidebar h3 {
+  color: ivory;
+  font-family: 'Zeyada', cursive;
+}
+
+h2 {
+  color: black;
+  font-family: 'Zeyada', cursive;
+}
+
+.form-list {
+  border-width:4px;
+  border-style:double;
+
+  border-color: black;
+  background-color: ivory;
+  margin: 10%;
+  padding: 10%;
+}
+
+.form-check {
+  text-align: center;
+  display: inline;
+}
+
+#start-over {
+  display: none;
 }

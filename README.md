@@ -12,11 +12,14 @@ _This is a website for a pizza company where a user can choose one or more indiv
 
 | Behavior | Input | Output |
 |---|---|---|
-| A user chooses a pizza size | Medium | Medium |
-| a user chooses a topping for their pizza | pepperoni | pepperoni |
-| A user chooses two toppings for their pizza | pepperoni, mushroom | pepperoni, mushroom |
-| A user chooses >2 toppings for their pizza | pepperoni, mushroom, green pepper | pepperoni, mushroom, green pepper |
-| A user makes their size and topping choices, and sees the cost of their pizza | Medium & pepperoni, mushroom | $14 |
+| A user chooses a pizza size for $10, $12 or $14 | 12" | $10 |
+| a user chooses a topping for their pizza for $1 each | pepperoni | $1 |
+| A user chooses two toppings for their pizza | pepperoni, mushroom | $2 |
+| A user chooses >2 toppings for their 12" pizza | 12" + pepperoni, mushroom, green pepper | $13 |
+| A user makes their size and topping choices, and sees the cost of their pizza | 12" & pepperoni, mushroom | $14 |
+| A user wishes to place another order after submitting one order | Click "Place another order" | Form clears and price starts again at $0 |
+
+
 
 
 ## Setup/Installation Requirements

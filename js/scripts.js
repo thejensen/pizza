@@ -6,7 +6,7 @@ function Pizza(toppings, size) {
   console.log(this.size);
 }
 
-var basePrice = 8;
+var basePrice = 0;
 
 Pizza.prototype.price = function () {
   for (var i = 0; i < this.toppings.length; i++) {
@@ -14,11 +14,11 @@ Pizza.prototype.price = function () {
   }
   for (var i = 0; i < this.size.length; i++) {
     if (this.size[i] === "12") {
-      basePrice += 2;
+      basePrice += 10;
     } else if (this.size[i] === "14") {
-      basePrice += 4;
+      basePrice += 12;
     } else if (this.size[i] === "18") {
-      basePrice += 6;
+      basePrice += 14;
     }
   }
   return basePrice;
@@ -38,6 +38,11 @@ $(document).ready(function() {
     var inputtedSize = ($('input:radio[name="size"]:checked').val());
     newPizza.size.push(inputtedSize);
     $('#price').text(newPizza.price());
+    $('#place-order').hide();
+    $('#start-over').show();
+  $('button').click(function(){
+    document.location.reload();
+  });
     // $('.form-check').empty();
   });
 });

@@ -1,13 +1,13 @@
 body {
   padding: 5%;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: lighter;
   background-image: url(../img/painting.jpg);
   -webkit-background-size: cover;
   background-repeat: no-repeat;
 }
 
-.sidebar {
+.header {
   background-image: url(../img/chalkboard.jpg);
   background-position: center;
   background-size: cover;
@@ -16,9 +16,13 @@ body {
   font-family: 'Stardos Stencil', cursive;
 }
 
-.sidebar h3 {
+.header h3 {
   color: ivory;
   font-family: 'Zeyada', cursive;
+}
+
+.header p {
+  font-family: 'Lato', sans-serif;
 }
 
 h2 {
@@ -26,21 +30,25 @@ h2 {
   font-family: 'Zeyada', cursive;
 }
 
-.form-list {
-  border-width:4px;
-  border-style:double;
-
-  border-color: black;
+.main-menu {
+  border: 2px solid olive;
   background-color: ivory;
-  margin: 10%;
-  padding: 10%;
+  margin: 5%;
+  padding: 5%;
+  padding-bottom: 10%;
 }
 
 .form-check {
   text-align: center;
   display: inline;
+  padding-right: 15px;
 }
 
 #start-over {
   display: none;
+  float: right;
+}
+
+#place-order {
+  float: right;
 }

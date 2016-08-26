@@ -1,5 +1,4 @@
 // Business Logic
-
 function Pizza(toppings, size) {
   this.toppings = [];
   this.size = [];
@@ -27,6 +26,7 @@ Pizza.prototype.price = function () {
 // User Interface Logic
 
 $(document).ready(function() {
+
   $('form').submit(function(event) {
     event.preventDefault();
 
@@ -40,9 +40,14 @@ $(document).ready(function() {
     $('#price').text(newPizza.price());
     $('#place-order').hide();
     $('#start-over').show();
-  $('button').click(function(){
-    document.location.reload();
   });
-    // $('.form-check').empty();
+
+
+
+  $('#start-over').click(function(){
+    $('.form-check-input').prop("checked", false);
+    $('input:radio').prop("checked", false);
+    $('#start-over').hide();
+    $('#place-order').show();
   });
 });

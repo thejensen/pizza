@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Arimo|Stardos+Stencil|Zeyada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Lato:300|Stardos+Stencil|Zeyada" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
@@ -9,37 +9,46 @@
 
     <title>Pizza Shop</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 sidebar">
-          <h1>Rustic Pizza</h1>
-          <h3>At Rustic Pizza, you're family. But family that pays up.</h3>
-        </div>
-        <div class="col-md-8 main-menu">
-          <form>
-            <div class="form-list">
-              <h2>Pie Size</h2>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="12">
-                  12" (Serves 2-3) $10
-                </label>
+  <body class="pizza-body">
+    <div class="pizza-container">
+      <div class="header" id="header-border">
+        <h1>Rustic Pizza</h1>
+        <h3>At Rustic Pizza, you're family. But family that pays up.</h3>
+        <p>Hours: 10am-11pm<br>
+           Location:<br>
+           209 SW Oak Street<br>
+           Portland OR 97211<br>
+        </p>
+      </div>
+      <div class="main-menu">
+        <form>
+          <p>Our piestros use only the freshest ingredients they can find. Enjoy the blood, sweat and tears of our chefs as you chow down on the best pizza in town.</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-list">
+                <h2>Pie Size</h2>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value="12">
+                    12" (Serves 2-3) $10
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value="14">
+                    14" (Serves 3-4) $12
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="size" value="18">
+                    18" (Serves 4-6) $14
+                  </label>
+                </div>
               </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="14">
-                  14" (Serves 3-4) $12
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="18">
-                  18" (Serves 4-6) $14
-                </label>
-              </div>
+            </div>
+            <div class="col-sm-6">
               <h2>Ingredients</h2>
-              <p>(Add $1 each)</p>
               <div class="form-check">
                 <label>
                   <input type="checkbox" class="form-check-input" value="pepperoni">
@@ -94,14 +103,15 @@
                   Extra Cheese
                 </label>
               </div>
-            </form>
-            <div id="order-total">
-              <button type="submit" class="btn btn-success" id="place-order">Place Order</button>
-              <button type="button" class="btn btn-warning" id="start-over">Start Another Order</button>
-              <h3>Order Total: $<span id="price"></span></h3>
+              <p>(Add $1 each)</p>
             </div>
           </div>
-        </div>
+          <div id="order-total">
+            <h2>Order Total: $<span id="price"></span></h2>
+            <button type="submit" class="btn btn-success" id="place-order">Place Order</button>
+            <button type="button" class="btn btn-warning" id="start-over">Start Another Order</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
